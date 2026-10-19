@@ -198,6 +198,7 @@ jobs:
 
       - name: MemBrowse memory report
         if: ${{ steps.membrowse-target.outputs.target_name != '' }}
+        continue-on-error: true
         uses: membrowse/membrowse-action@v1
         with:
           target_name: ${{ steps.membrowse-target.outputs.target_name }}
