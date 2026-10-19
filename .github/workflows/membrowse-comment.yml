@@ -2,7 +2,7 @@ name: MemBrowse PR Comment
 
 on:
   workflow_run:
-    workflows: [MemBrowse Memory Report]
+    workflows: [CI]
     types:
       - completed
 
